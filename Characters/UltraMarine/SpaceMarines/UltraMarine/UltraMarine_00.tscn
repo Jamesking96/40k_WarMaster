@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlxjls61ji8xr"]
+
+[ext_resource type="Script" path="res://Scripts/Player/Player_Controller.gd" id="1_ky5tj"]
+[ext_resource type="Texture2D" uid="uid://p6l0k0s3wgcm" path="res://Sprites/SpaceMarines/UltraMarine/Ultramarine_spt.png" id="2_exjpo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x0fq7"]
+radius = 79.0063
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_ky5tj")
+
+[node name="Ultramarine_spt" type="Sprite2D" parent="."]
+texture = ExtResource("2_exjpo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_x0fq7")

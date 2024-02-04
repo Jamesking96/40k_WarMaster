@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://81m2jbwfuxnv"]
+
+[ext_resource type="Script" path="res://Scripts/Player/Player_Controller.gd" id="1_jpjxs"]
+[ext_resource type="Texture2D" uid="uid://bgrr68iroeov7" path="res://Sprites/SpaceMarines/UltraMarine_Red/Ultramarine_spt_red.png" id="2_jnkui"]
+[ext_resource type="Script" path="res://Scripts/Test/Testing_Script.gd" id="3_1qtn0"]
+[ext_resource type="PackedScene" uid="uid://booro7tgw7k7x" path="res://Scenes/UI/Control_ProgressBar.tscn" id="4_prswg"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x0fq7"]
+radius = 79.0063
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_jpjxs")
+
+[node name="Ultramarine_spt" type="Sprite2D" parent="."]
+texture = ExtResource("2_jnkui")
+script = ExtResource("3_1qtn0")
+
+[node name="ControlProgressBar" parent="Ultramarine_spt" instance=ExtResource("4_prswg")]
+offset_top = -130.0
+offset_bottom = -130.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_x0fq7")

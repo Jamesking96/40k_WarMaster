@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cbxbrjyye3hgc"]
+
+[ext_resource type="PackedScene" uid="uid://dlxjls61ji8xr" path="res://Characters/UltraMarine/SpaceMarines/UltraMarine/UltraMarine_00.tscn" id="1_bwqr7"]
+[ext_resource type="PackedScene" uid="uid://81m2jbwfuxnv" path="res://Characters/Testing/Test_Dummy.tscn" id="2_x8ek4"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="UltraMarine00" parent="." instance=ExtResource("1_bwqr7")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_x8ek4")]
+position = Vector2(206, 188)
